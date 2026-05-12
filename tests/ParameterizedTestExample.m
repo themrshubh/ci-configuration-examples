@@ -11,6 +11,7 @@ classdef ParameterizedTestExample < matlab.unittest.TestCase
     
     methods (Test)
         function testDayofyear(testCase,monthNum,dayNum,yearNum)
+			testCase.assumeTrue(ismac);
             % Convert numeric values to mm/dd/yyyy string
             % Note: MATLAB will automatically convert numbers to strings
             % when performing number+string arithmetic
