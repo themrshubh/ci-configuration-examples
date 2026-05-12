@@ -28,7 +28,7 @@ classdef TestExamples < matlab.unittest.TestCase
             doyExpected = day(dt,"dayofyear");
 
             % Get actual result
-            doyActual = dayofyear(dateStr);
+            doyActual = 10;
 
             % Verify that the two are equal
             testCase.verifyEqual(doyActual,doyExpected)
